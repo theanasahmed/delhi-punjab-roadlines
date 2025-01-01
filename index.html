@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delhi Punjab Roadlines Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Delhi Punjab Roadlines</h1>
+      <div class="header">
+        <div class="header-left">
+          <p>Pan Card No. : AAIFD 9832 H</p>
+          <p>Regd No. :</p>
+          <p>Service Provider : 0952209908S</p>
+        </div>
+        <div class="header-right">
+          <p>Head Office : Payagipur Chauraha, Jaunpur Road Sultanpur</p>
+          <p>Contact : 9415056829, 8563044829, 9005838518</p>
+          <p>E-mail : delhipunjabroadline@gmail.com</p>
+        </div>
+      </div>
+      <form id="roadlines-form">
+        <div class="form-row">
+          <label for="biltyNo">Bilty No. :</label>
+          <input type="text" id="biltyNo" name="biltyNo" required />
+          <label for="date">Date :</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-section">
+          <h2>Sender's Information</h2>
+          <label for="senderContact">Contact:</label>
+          <input type="text" id="senderContact" name="senderContact" required />
+          <label for="senderAddress">Address:</label>
+          <textarea id="senderAddress" name="senderAddress" rows="3" required></textarea>
+        </div>
+        <div class="form-section">
+          <h2>Receiver's Information</h2>
+          <label for="receiverContact">Contact:</label>
+          <input type="text" id="receiverContact" name="receiverContact" required />
+          <label for="receiverAddress">Address:</label>
+          <textarea id="receiverAddress" name="receiverAddress" rows="3" required></textarea>
+        </div>
+        <div class="form-row">
+          <label for="from">From:</label>
+          <input type="text" id="from" name="from" required />
+          <label for="to">To:</label>
+          <input type="text" id="to" name="to" required />
+        </div>
+        <div class="table-section">
+          <table>
+            <thead>
+              <tr>
+                <th>Details</th>
+                <th>Driver Information</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="item">Item:</label>
+                    <input type="text" id="item" name="item" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="truckNumber">Truck Number:</label>
+                    <input type="text" id="truckNumber" name="truckNumber" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="quantity">Quantity:</label>
+                    <input type="text" id="quantity" name="quantity" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="driverName">Driver Name:</label>
+                    <input type="text" id="driverName" name="driverName" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="weight">Weight:</label>
+                    <input type="text" id="weight" name="weight" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="driverAddress">Address:</label>
+                    <input type="text" id="driverAddress" name="driverAddress" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="farePerQuintal">Fare Per Quintal:</label>
+                    <input type="text" id="farePerQuintal" name="farePerQuintal" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="driverDL">Driver's DL No.:</label>
+                    <input type="text" id="driverDL" name="driverDL" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="totalFare">Total Fare:</label>
+                    <input type="text" id="totalFare" name="totalFare" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="truckOwner">Truck Owner:</label>
+                    <input type="text" id="truckOwner" name="truckOwner" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="biltyCharge">Bilty Charge:</label>
+                    <input type="text" id="biltyCharge" name="biltyCharge" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="ownerAddress">Address:</label>
+                    <input type="text" id="ownerAddress" name="ownerAddress" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="serviceCharge">Service Charge:</label>
+                    <input type="text" id="serviceCharge" name="serviceCharge" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="driverContact">Driver's Contact:</label>
+                    <input type="text" id="driverContact" name="driverContact" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="guaranteeCharge">Guarantee Charge:</label>
+                    <input type="text" id="guaranteeCharge" name="guaranteeCharge" />
+                  </div>
+                </td>
+                <td>
+                  <div class="table-input">
+                    <label for="ownerContact">Owner's Contact:</label>
+                    <input type="text" id="ownerContact" name="ownerContact" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="fare">Fare:</label>
+                    <input type="text" id="fare" name="fare" />
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="totalFare2">Total Fare:</label>
+                    <input type="text" id="totalFare2" name="totalFare2" />
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="advance">Advance:</label>
+                    <input type="text" id="advance" name="advance" />
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-input">
+                    <label for="payment">Payment:</label>
+                    <input type="text" id="payment" name="payment" />
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="button-container">
+          <button type="button" id="generate-pdf">Generate PDF</button>
+          <div id="loading" class="loading">Generating PDF...</div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
